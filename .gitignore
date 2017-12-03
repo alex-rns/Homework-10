@@ -19,6 +19,7 @@ git_ignore/
 .idea/gradle.xml
 .idea/libraries
 
+
 # Mongo Explorer plugin:
 .idea/mongoSettings.xml
 
@@ -45,3 +46,4 @@ fabric.properties
 
 *.psd
 prepros-6.config
+.idea
