@@ -2,10 +2,8 @@
   &-list
     overflow: hidden
   &-item
-    //transition: $transition
-
+    transition: $transition
     border: 1px solid $white
-
     position: relative
 
     img
@@ -29,7 +27,9 @@
       transform: translate(-50%, -50%)
 
     &:hover
+
       transform: scale(1.2)
+      width: 50%
       .works-item
         &-info
          display: block
