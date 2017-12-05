@@ -1,12 +1,13 @@
 .works
   &-list
-    overflow: hidden
   &-item
     transition: $transition
     border: 1px solid $white
     position: relative
+    overflow: hidden
 
     img
+      transition: $transition
       min-height: 100%
 
     &-overlay
@@ -28,7 +29,6 @@
 
     &:hover
 
-      transform: scale(1.2)
       width: 50%
       .works-item
         &-info
@@ -36,6 +36,8 @@
 
         &-overlay
           opacity: 1
+      img
+        transform: scale(1.2)
 
 
 

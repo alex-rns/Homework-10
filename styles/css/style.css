@@ -7284,6 +7284,9 @@ body {
 .full-opacity {
   opacity: 1; }
 
+.accent-text {
+  color: #e84545; }
+
 .welcome-section {
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 46, 74, 0.95)), to(rgba(43, 46, 74, 0.95))), url("../../../images/welcome-bg.png") 50% 50% no-repeat;
@@ -7360,16 +7363,17 @@ h3 {
     max-width: 300px;
     margin: 0 auto; }
 
-.works-list {
-  overflow: hidden; }
-
 .works-item {
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   border: 1px solid #fff;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .works-item img {
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     min-height: 100%; }
   .works-item-overlay {
     background-color: rgba(232, 69, 69, 0.9);
@@ -7389,11 +7393,67 @@ h3 {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
   .works-item:hover {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
     width: 50%; }
     .works-item:hover .works-item-info {
       display: block; }
     .works-item:hover .works-item-overlay {
+      opacity: 1; }
+    .works-item:hover img {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2); }
+
+.card {
+  min-width: 270px;
+  margin: 0 auto; }
+  .card h3 {
+    font: 400 22px "Raleway", sans-serif;
+    color: #2d3033; }
+  .card span {
+    font-size: 13px; }
+  .card img {
+    min-height: 270px;
+    min-width: 270px; }
+
+.social-icon {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .social-icon .fa {
+    font-size: 20px;
+    color: #c6cacc;
+    border: #e1e3e4 1px solid;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 2; }
+  .social-icon:hover {
+    background: #e84545; }
+    .social-icon:hover .fa {
+      color: #fff; }
+
+.blockquote-wrap {
+  background: #53354a; }
+
+.blockquote-carousel {
+  max-width: 600px;
+  color: #fff;
+  border: none; }
+  .blockquote-carousel p {
+    font: italic 36px/42px "Cardo", sans-serif; }
+  .blockquote-carousel span {
+    font: 700 14px/21px "Raleway", sans-serif;
+    font-size: 13px; }
+
+.carousel-indicators {
+  bottom: 70px; }
+  .carousel-indicators li {
+    margin: 0 10px;
+    max-width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.2; }
+    .carousel-indicators li.active, .carousel-indicators li:hover {
       opacity: 1; }
