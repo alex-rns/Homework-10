@@ -7450,7 +7450,8 @@ h3 {
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    min-height: 100%; }
+    min-height: 100%;
+    width: 100%; }
   .works-item-overlay {
     background-color: rgba(232, 69, 69, 0.9);
     position: absolute;
@@ -7480,7 +7481,6 @@ h3 {
       transform: scale(1.2); }
 
 .card {
-  min-width: 270px;
   margin: 0 auto; }
   .card h3 {
     font: 400 22px "Raleway", sans-serif;
@@ -7488,8 +7488,7 @@ h3 {
   .card span {
     font-size: 13px; }
   .card img {
-    min-height: 270px;
-    min-width: 270px; }
+    width: 100%; }
 
 .social-icon {
   border-radius: 3px;
@@ -7574,14 +7573,31 @@ h3 {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .jumbotron {
+    padding: 18% 50px 7%; }
   .navigation {
     display: none; }
   .navigation-button {
-    display: block; } }
+    display: block; }
+  .download-section h3 {
+    font-size: 22px;
+    line-height: 1.2; }
+  .blockquote-wrap {
+    min-height: 300px; } }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-  /**/ }
+@media only screen and (max-width: 576px) {
+  .header-wrap {
+    padding: 0 25px; }
+  .jumbotron {
+    padding: 22% 50px 7%; }
+    .jumbotron p {
+      font-size: 16px; }
+  .slick-dots {
+    left: 80%;
+    top: 92%; }
+  .jumbo-wrap p {
+    font-size: 14px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
