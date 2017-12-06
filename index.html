@@ -6,49 +6,57 @@
   <meta name="description" content="GeekHub - Frontend+JS, 7 season, Homework#7, Belodubrovsky"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
-  <link rel="stylesheet" type="text/css" href="styles/css/style.css"/>
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cardo:400i" rel="stylesheet">
   <link rel="stylesheet" href="styles/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/css/animate.css">
   <link rel="stylesheet" href="styles/css/lightbox.min.css">
+  <link rel="stylesheet" href="styles/css/slick.css">
+  <link rel="stylesheet" href="styles/css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="styles/css/style.css"/>
 </head>
 
 <body>
 
 <div class="wrapper">
   <section class="welcome-section">
-    <div class="container">
-      <header class="row justify-content-between ">
-        <a href="/">
-          <img src="images/logo.png" alt="logo">
-          <h1 class="over-text-indent">SuperPuper</h1>
-        </a>
-        <nav class="navigation">
-          <ul class="d-flex upper-text">
-            <li><a class="active" href="#features">Features</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#teams">Our Team</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#download">Download</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="jumbotron">
-        <div class="container">
-          <h2 class="upper-text">Your Favorite One Page
-            Multi Purpose Template</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna
-            vel scelerisque nisl consectetur et.</p>
-          <button class="btn button">Find Out More</button>
+
+    <header class="main-header ">
+      <div class="container">
+        <div class="header-wrap row justify-content-between align-items-center">
+          <a href="/">
+            <img src="images/logo.png" alt="logo">
+            <h1 class="over-text-indent">SuperPuper</h1>
+          </a>
+          <nav class="navigation">
+            <ul class="d-flex upper-text">
+              <li><a class="active" href="#features">Features</a></li>
+              <li><a href="#works">Works</a></li>
+              <li><a href="#teams">Our Team</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#download">Download</a></li>
+            </ul>
+          </nav>
+          <a href="#" class="navigation-button"></a>
         </div>
       </div>
+    </header>
+
+
+    <div class="jumbotron container mb-0">
+      <div class="jumbo-wrap">
+        <h2 class="upper-text">Your Favorite One Page
+          Multi Purpose Template</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</p>
+        <button class="btn button">Find Out More</button>
+      </div>
     </div>
+
   </section>
 
-  <section class="features container py-5">
-    <ul class="row py-5">
+  <section class="features container py-lg-5 py-md-4">
+    <ul class="row pb-5">
       <li class="features-item col-md-4 col-sm-6 text-center">
         <h3 class="upper-text">Easily Customised</h3>
         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu
@@ -185,7 +193,7 @@
         <p class="mb-4">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa
           justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget
           urna mollis ornare vel eu leo.</p>
-        <ul class="social social-team row pl-3">
+        <ul class="social row pl-3">
           <li class="social-icon mr-1">
             <a href="#">
               <i class="fa fa-facebook"></i>
@@ -321,33 +329,82 @@
     </ul>
   </section>
 
-  <section class="testimonials-section container-fluid p-0">
-      <div id="carouselTestimonials" class="carousel slide row no-gutters" data-ride="">
+  <section class="testimonials-section p-0 mb-5">
 
-        <div class="carousel-inner" role="listbox">
-
-          <div class="carousel-item active">
-            <div class="col-6 p-0">
-              <img class="d-block img-fluid" src="images/blockquote-1.png" alt="First slide">
-            </div>
-            <div class="col-6 p-0 blockquote-wrap d-flex">
-              <blockquote class="blockquote blockquote-carousel m-auto">
-                <p class="mb-3">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
-                <span class="upper-text">Susan Sims, Interaction Designer at XYZ</span>
-              </blockquote>
-              <ol class="carousel-indicators">
-                <li data-target="#carouselTestimonials" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselTestimonials" data-slide-to="1"></li>
-              </ol>
-            </div>
-
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="..." alt="Second slide">
-          </div>
+    <div class="slick-carousel">
+      <div class="slick-item d-flex">
+        <div class="col-6 p-0">
+          <img class="d-block" src="images/blockquote-1.png" alt="First slide">
+        </div>
+        <div class="col-6 p-0 blockquote-wrap d-flex">
+          <blockquote class="blockquote blockquote-carousel m-auto">
+            <p class="mb-3">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
+            <span class="upper-text">Susan Sims, Interaction Designer at XYZ</span>
+          </blockquote>
         </div>
       </div>
+      <div class="slick-item d-flex">
+        <div class="col-6 p-0">
+          <img class="d-block" src="images/blockquote-2.png" alt="First slide">
+        </div>
+        <div class="col-6 p-0 blockquote-wrap d-flex">
+          <blockquote class="blockquote blockquote-carousel m-auto">
+            <p class="mb-3">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
+            <span class="upper-text">Susan Sims, Interaction Designer at XYZ</span>
+          </blockquote>
+        </div>
+      </div>
+
+    </div>
   </section>
+
+  <section class="download-section text-center my-5">
+    <div class="download-section-wrap py-5">
+      <h3 class="mb-3">Are You Ready to Start? Download Now For Free!</h3>
+      <p class="upper-text mb-4">Fusce dapibus, tellus ac cursus commodo</p>
+      <button class="btn button button-wide button-animated">Download Here</button>
+    </div>
+  </section>
+
+  <section class="contact-section text-center py-5">
+    <div class="container">
+      <ul class="row">
+        <li class="col-4">
+          <h3 class="upper-text my-3">Location</h3>
+          <p class="half-opacity">3481 Melrose Place</p>
+          <p class="half-opacity">Beverly Hills, CA 90210</p>
+        </li>
+        <li class="col-4">
+          <h3 class="upper-text my-3">Share with Love</h3>
+          <ul class="social social-contact">
+            <li class="social-icon d-inline-block mr-1">
+              <a href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li class="social-icon d-inline-block mr-1">
+              <a href="#">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="social-icon d-inline-block mr-1">
+              <a href="#">
+                <i class="fa fa-linkedin-square"></i>
+              </a>
+            </li>
+          </ul>
+
+        </li>
+        <li class="col-4">
+          <h3 class="upper-text my-3">About</h3>
+          <p class="half-opacity">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+
 
 </div>
 
@@ -355,18 +412,20 @@
 <!----------------------------------FOOTER--------------------------------------->
 
 
-<footer>
-  <div class="container">
-    <ul class="row"></ul>
+<footer class="main-footer text-center">
+  <p class="mt-4">Copyright © 2015 Template. All Rights Reserved</p>
+  <p class="mb-4">Made with <span class="webdings accent-text">Y</span>
+    <a href="#" class="text-white"> by Kamal Chaneman</a>
+  </p>
 
 
-  </div>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 <script src="js/lightbox.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/commonJs.js"></script>
 </body>
 </html>
