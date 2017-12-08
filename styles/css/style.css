@@ -7357,7 +7357,7 @@ h3 {
   font: 700 14px/21px "Raleway", sans-serif; }
 
 .navigation li {
-  padding: 0 30px; }
+  padding: 0 25px; }
   .navigation li a {
     color: rgba(255, 255, 255, 0.75);
     font: 700 13px "Raleway", sans-serif; }
@@ -7387,8 +7387,9 @@ h3 {
     flex-direction: column; }
     .navigation-mobile ul li {
       padding: 10px;
-      font-weight: 700;
-      font-size: 18px; }
+      font-weight: 700; }
+    .navigation-mobile ul a {
+      font-size: 28px; }
 
 .navigation-button {
   display: none;
@@ -7428,11 +7429,34 @@ h3 {
   .button-wide {
     padding: 10px 75px; }
 
+.easily-customised:before {
+  background: url("../../../images/icon-easily-customised.png"); }
+
+.responsive-ready:before {
+  background: url("../../../images/icon-responsive-ready.png"); }
+
+.modern-design:before {
+  background: url("../../../images/icon-modern-design.png"); }
+
+.clean-code:before {
+  background: url("../../../images/icon-clean-code.png"); }
+
+.ready-to-ship:before {
+  background: url("../../../images/icon-ready-to-ship.png"); }
+
+.download-for-free:before {
+  background: url("../../../images/icon-download-for-free.png"); }
+
 .features-item {
   padding-top: 150px;
   position: relative; }
+  .features-item h3 {
+    margin-bottom: 20px; }
+  .features-item p {
+    max-width: 300px;
+    margin: 0 auto; }
   .features-item:before {
-    width: 60px;
+    width: 80px;
     height: 60px;
     content: '';
     position: absolute;
@@ -7440,12 +7464,8 @@ h3 {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    background: url("../../../images/icon-easily-customised.png"); }
-  .features-item h3 {
-    margin-bottom: 20px; }
-  .features-item p {
-    max-width: 300px;
-    margin: 0 auto; }
+    background-position: 50% 50%;
+    background-repeat: no-repeat; }
 
 .works-item {
   -webkit-transition: all 0.5s ease;
@@ -7477,16 +7497,14 @@ h3 {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
-  .works-item:hover {
-    width: 50%; }
-    .works-item:hover .works-item-info {
-      display: block; }
-    .works-item:hover .works-item-overlay {
-      opacity: 1; }
-    .works-item:hover img {
-      -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-      transform: scale(1.2); }
+  .works-item:hover .works-item-info {
+    display: block; }
+  .works-item:hover .works-item-overlay {
+    opacity: 1; }
+  .works-item:hover img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
 
 .card {
   margin: 0 auto; }
@@ -7571,42 +7589,63 @@ h3 {
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .jumbotron {
-    padding: 15% 50px 7%; }
+    padding: 20% 50px 15%; }
   .jumbo-wrap p {
     font-size: 18px; }
   .slick-item img {
     min-height: 400px; }
   .blockquote p {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .features {
+    padding-bottom: 60px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .jumbotron {
-    padding: 18% 50px 7%; }
+    padding: 25% 50px; }
   .navigation {
     display: none; }
   .navigation-button {
     display: block; }
   .download-section h3 {
-    font-size: 22px;
+    font-size: 26px;
     line-height: 1.2; }
   .blockquote-wrap {
-    min-height: 300px; } }
+    min-height: 300px; }
+  .features {
+    padding-bottom: 70px; }
+  .contact-section ul {
+    display: block; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
   .header-wrap {
     padding: 0 25px; }
   .jumbotron {
-    padding: 22% 50px 7%; }
+    padding: 22% 50px 20%; }
     .jumbotron p {
-      font-size: 16px; }
+      font-size: 16px;
+      margin-bottom: 50px; }
   .slick-dots {
     left: 80%;
     top: 92%; }
   .jumbo-wrap p {
-    font-size: 14px; } }
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /**/ }
+    font-size: 14px; }
+  .navigation-button {
+    height: 20px;
+    width: 20px; }
+    .navigation-button:before {
+      font-size: 10px;
+      width: 10px; }
+  .navigation-mobile ul a {
+    font-size: 16px; }
+  .header-wrap {
+    padding: 20px 25px; }
+    .header-wrap img {
+      height: 18px; }
+    .header-wrap h2 {
+      line-height: 60px; }
+  .card {
+    padding: 0 30px; }
+  .blockquote-wrap {
+    min-height: 350px; } }

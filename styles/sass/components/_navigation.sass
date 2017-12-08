@@ -1,6 +1,7 @@
 .navigation
   li
-    padding: 0 30px
+    padding: 0 25px
+
     a
       color: rgba(255, 255, 255, 0.75)
       font: 700 13px "Raleway", sans-serif
@@ -28,8 +29,9 @@
       li
         padding: 10px
         font-weight: 700
-        font-size: 18px
 
+      a
+        font-size: 28px
 
   &-button
     display: none
@@ -41,6 +43,7 @@
     right: 5%
     background-color: $accent-color
     border-radius: 50%
+
     &:before
       font-size: 28px
       position: absolute
@@ -51,6 +54,7 @@
       top: 50%
       left: 50%
       transform: translate(-50%, -50%)
+
     &-open
       &:before
         content: "\f00d"
